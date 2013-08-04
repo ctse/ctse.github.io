@@ -1,13 +1,41 @@
+##
+## Adapted from the Jekyll configuration for
+## http://rubenschade.github.io/weblog/
+## Used for http://ctse.github.io/
+## Updated 2013.08.04
+## NOTE TO SELF: Don't use tabs!
+##
+
+## Github default overrides
+safe: true
+lsi: false
 pygments: true
 
+## General
 name: 'Kirinyan'
 tagline: ''
 future: false
 timezone: Australia/Sydney
 
-baseurl: http://kirinyan.net
+## Personal details
+author:
+  name: Clara Tse
+  url: http://claratse.com
+  github: ctse
 
+## URLs, based largely on WordPress
+url: ''
+baseurl: http://kirinyan.net
 permalink: /:title/
 assets: https://dl.dropboxusercontent.com/u/158866275
 
+## Pagination (appears Github needs 10, could be wrong)
 paginate: 10
+
+## Other custom attributes
+language: en-AU
+
+## I'm not sure what this really does, but keeping it...
+rdiscount:
+  extensions:
+    - smart
