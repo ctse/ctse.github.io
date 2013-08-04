@@ -1,2 +1,13 @@
-name: Your New Jekyll Site
 pygments: true
+
+name: 'Kirinyan'
+tagline: ''
+future: false
+timezone: Australia/Sydney
+
+baseurl: http://kirinyan.net
+
+permalink: /:title/
+assets: https://dl.dropboxusercontent.com/u/158866275
+
+paginate: 10
