@@ -1,0 +1,91 @@
+/* 
+ * style.css for Kirinyan.net
+ * By Clara Tse 2013
+ */
+
+/***********************************************************************/
+/*  MAIN RESET  */
+/***********************************************************************/
+html,body,h1,h2,nav ul,nav li {
+	background:transparent;
+  border:0em;
+  list-style-type:none;
+	margin:0em;
+	padding:0em;
+	vertical-align:baseline;
+  word-wrap:break-word;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,nav,section {
+  display:block;
+}
+img {
+  display:inline; /* FIREFOX/NETSCAPE FIX */
+}
+
+
+/***********************************************************************/
+/*  SITEWIDE STUFF  */
+/***********************************************************************/
+html {
+  background-color:plum;
+  text-align:center; /* CENTERING FOR IE */
+}
+body {
+  background:white;
+  padding-top:20px;
+  font:14px "Helvetica Neue",sans-serif;
+  margin:0px auto; /* CENTERING FOR EVERYONE ELSE */
+  text-align:left; /* TO FIX CENTERING IE HACK ABOVE */
+  width:700px;
+}
+
+
+/***********************************************************************/
+/*  SIDEBAR  */
+/***********************************************************************/
+#sidebar {
+  border:1px solid plum;
+  float:left;
+  margin-bottom:20px;
+  text-align:right;
+  width:140px;
+}
+nav ul {
+  margin-bottom:20px;
+}
+
+
+/***********************************************************************/
+/*  DOCUMENT WRAPPER  */
+/***********************************************************************/
+section {
+  margin-left:160px;
+}
+
+
+/***********************************************************************/
+/*  BLOG POSTS  */
+/***********************************************************************/
+article {
+  border:1px solid plum;  
+  margin-bottom:20px;
+}
+
+
+/***********************************************************************/
+/*  BLOG POSTS  */
+/***********************************************************************/
+#pagination {
+  border:1px solid plum;
+  margin-bottom:20px;  
+}
+
+/***********************************************************************/
+/*  FOOTER  */
+/***********************************************************************/
+footer {
+  border:1px solid plum;
+  padding:10px 20px;
+  clear:both;
+}
