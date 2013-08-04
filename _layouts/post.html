@@ -1,9 +1,13 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
-
-<div class="post">
-{{ content }}
-</div>
+<article role="article">
+  <h2><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></h2>
+  <div class="article-meta">
+    <date datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</date> &middot;
+    <a rel="tag" href="/{{ page.category }}">{{ page.category }}</a>
+  </div>
+  <div class="article-content">
+    {{ content }}
+  </div>
+</article>

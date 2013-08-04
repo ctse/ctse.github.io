@@ -1,8 +1,37 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Home
 ---
 
+    {% for post in paginator.posts %}
+    <article role="article">
+      <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+      <div class="article-meta">
+        <date datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</date> &middot;
+        <a rel="tag" href="/{{ post.category}}">{{ post.category }}</a>
+      </div>
+      <div class="article-content">
+        {{ post.content }}
+      </div>
+    </article>
+    {% endfor %}
+    
+    <!-- Pagination links -->
+    <div id="pagination">
+      {% if paginator.previous_page %}
+        {% if paginator.previous_page == 1 %}
+          <a rel="prev" href="/">&larr; Back</a>{% else %}
+          {% else %}
+        <a rel="prev" href="/page{{ paginator.previous_page }}/">&larr; Back</a>
+          {% endif %}
+      {% endif %}
+      <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a href="/page{{ paginator.next_page }}" class="next">Next &rarr;</a>
+      {% endif %}
+    </div>
+
+<!-- Jekyll Generated Homepage
 <div id="home">
   <h1>Blog Posts</h1>
   <ul class="posts">
@@ -10,4 +39,4 @@ title: Your New Jekyll Site
       <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
-</div>
+</div> -->
